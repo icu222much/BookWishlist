@@ -1,0 +1,33 @@
+{
+  "name": "book-wishlist",
+  "version": "1.0.0",
+  "description": "Create local wishlist of books pulled from Google Book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "connect": "^3.6.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-export": "^2.2.0",
+    "gulp-less": "^3.3.2",
+    "gulp-open": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.8",
+    "merge-stream": "^1.0.1",
+    "normalize.css": "^7.0.0",
+    "open": "0.0.5",
+    "path": "^0.12.7",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

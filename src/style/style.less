@@ -1,0 +1,192 @@
+@root-font-size: 14px;
+@off-white: #eaf9fe;
+@light-blue: #aebefd;
+@dark-brown: #4c1413;
+
+body {
+  font-size: @root-font-size;
+  font-family: Trebuchet MS, Verdana, sans-serif;
+  color: @dark-brown;
+  background: @off-white;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 0;
+  text-align: center;
+}
+
+.search {
+  &-list {
+    float: left;
+    margin-right: 20px;
+    padding: 20px;
+    width: 30%;
+    max-width: 300px;
+    border-right: @dark-brown 1px solid;
+    box-sizing: border-box;
+  }
+
+  &-input {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    color: @dark-brown;
+  }
+
+  &-book {
+    position: relative;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid @dark-brown;
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &__title {
+      margin: 0;
+      padding-right: 25px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+      color: @dark-brown;
+    }
+
+    &__author {
+      margin: 0;
+      padding-right: 25px;
+    }
+
+    &__add-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      .book-btn();
+    }
+  }
+}
+
+.saved {
+  &-list {
+    float: left;
+    width: calc(~'70% - 50px');
+    box-sizing: border-box;
+  }
+
+  &__heading {
+    padding-top: 5px;
+  }
+
+  &-book {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid @dark-brown;
+
+    &__packart {
+      width: 80px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    &__text {
+      width: calc(~'100% - 100px');
+      float: left;
+      overflow: hidden;
+    }
+
+    &__title {
+      margin: 0;
+      padding-right: 25px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+      color: @dark-brown;
+    }
+
+    &__author {
+      margin: 0 0 10px;
+      padding-right: 25px;
+    }
+
+    &__description {
+      margin: 0;
+      padding-right: 25px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      max-height: 2.5em;
+      font-size: 0.8em;
+    }
+
+    &__pages {
+      margin: 10px 0 0 0;
+      font-size: 0.8em;
+      font-style: italic;
+    }
+
+    &__remove-btn {
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      margin: 0;
+      .book-btn();
+    }
+  }
+}
+
+.book-btn {
+  width: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  background: @light-blue;
+  border: 1px solid darken(@light-blue, 10%);
+  border-radius: 16px;
+
+  &:hover {
+    background: darken(@light-blue, 3%);
+  }
+
+  &:active {
+    background: darken(@light-blue, 6%);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+
+  .search-list {
+    float: none;
+    width: 100%;
+    max-width: none;
+    border: 1px solid @dark-brown;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .saved-list {
+    float: none;
+    padding: 0 20px;
+    width: 100%;
+  }
+}

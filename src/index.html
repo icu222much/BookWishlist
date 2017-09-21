@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Book Wishlist</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="icon" sizes="192x192" href="images/icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="scripts/bundle.js" async defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Book Wishlist</h1>
+    <h2 class="subtitle">Creating a list of your favourite books</h2>
+    <section class="search-list">
+      <input class="search-input" type="text" placeholder="Search for books" />
+      <p class="search-error"></p>
+    </section>
+    <section class="saved-list">
+      <h3 class="saved__heading">My Wishlist</h3>
+    </section>
+  </div>
+  <template class="search-book-template">
+    <article class="search-book" 
+      data-packart="" data-title="" data-link="" data-author="" data-description="" data-pages="">
+      <a class="search-book__title" href="" target="_new"></a>
+      <p class="search-book__author"></p>
+      <p class="search-book__add-btn">+</p>
+    </article>
+  </template>
+  <template class="saved-book-template">
+    <article class="saved-book">
+      <img class="saved-book__packart" src="" />
+      <div class="saved-book__text">
+        <a class="saved-book__title" href="" target="_new"></a>
+        <p class="saved-book__author"></p>
+        <p class="saved-book__description"></p>
+        <p class="saved-book__pages"></p>
+      </div>
+      <p class="saved-book__remove-btn">-</p>
+    </article>
+  </template>
+</body>
+
+</html>
