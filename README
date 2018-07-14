@@ -1,7 +1,17 @@
-This is Jon Chan's (www.jonchan.ca) technical assignment for Yardi. You will find my code in /BookWishlist/src.
+This is a web app that allows users to query for books and to session 'save' them in a list
+
+Technologies utilized:
+- HTML
+- CSS (LESS)
+- JavaScript (vanilla, Google Books API)
+- Gulp
 
 Steps to launch project:
-1) Open command line path to: /BookWishlist
-2) Install packages with command: npm install
-3) Run gulp with command: gulp
-4) View project: http://localhost:9005/
+1) Open command line path to:    /BookWishlist
+2) Install packages via command: npm install
+3) Run local server via command: gulp
+4) View project in browser at:   http://localhost:9005/
+
+I can be reached via:
+- JonChanDev@gmail.com
+- http://www.JonChan.ca
